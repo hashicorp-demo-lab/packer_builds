@@ -65,7 +65,7 @@ source "azure-arm" "basic-example" {
 
 build {
   hcp_packer_registry {
-    bucket_name = "ubuntu-nginx"
+    bucket_name = "azure-ubuntu-nginx"
     description = <<EOT
 Some nice description about the image being published to HCP Packer Registry.
     EOT
@@ -86,7 +86,6 @@ Some nice description about the image being published to HCP Packer Registry.
 
   provisioner "shell" {
     inline = [
-      "sudo apt-get update",
       "sudo apt-get install nginx -y",
       "sudo systemctl enable nginx",
       "sudo systemctl start nginx"
