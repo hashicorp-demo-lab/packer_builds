@@ -52,7 +52,7 @@ source "azure-arm" "basic-example" {
   os_type                           = "Linux"
   image_publisher                   = "Canonical"
   image_offer                       = "UbuntuServer"
-  image_sku                         = "19.04"
+  image_sku                         = "18_04-lts-gen2"
 
   azure_tags = {
     dept = "acme"
