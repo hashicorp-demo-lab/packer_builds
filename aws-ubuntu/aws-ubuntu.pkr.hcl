@@ -35,7 +35,7 @@ source "amazon-ebs" "ubuntu-ap-southeast-2" {
 
 build {
   hcp_packer_registry {
-    bucket_name = "packer-ubuntu"
+    bucket_name = "ubuntu"
     description = <<EOT
 Some nice description about the image being published to HCP Packer Registry.
     EOT
