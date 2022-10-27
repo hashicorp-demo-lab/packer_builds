@@ -86,8 +86,8 @@ Some nice description about the image being published to HCP Packer Registry.
 
   provisioner "shell" {
     inline = [
-      "apt-get update",
-      "sudo apt-get install nginx -y">
+      "sudo apt-get update",
+      "sudo apt-get install nginx -y",
       "sudo systemctl enable nginx",
       "sudo systemctl start nginx"
 
