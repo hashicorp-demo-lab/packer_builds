@@ -48,7 +48,7 @@ source "azure-arm" "basic-example" {
   tenant_id       = var.tenant_id
 
   managed_image_resource_group_name = var.resource_group_name
-  managed_image_name                = "azure-ubuntu"
+  managed_image_name                = "packer_azure-ubuntu{{timestamp}}_v${var.version}"
   os_type                           = "Linux"
   image_publisher                   = "Canonical"
   image_offer                       = "UbuntuServer"
